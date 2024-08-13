@@ -35,13 +35,52 @@ const tabData = {
     },
   ],
   Approved: [
-    // Add approved appointments here
+    {
+      day: 'Friday',
+      date: '28 Oct',
+      time: '2:00 pm - 3:00 pm',
+      name: 'Emily Davis',
+      purpose: 'Follow-up',
+    },
+    {
+      day: 'Saturday',
+      date: '29 Oct',
+      time: '3:00 pm - 4:00 pm',
+      name: 'Michael Brown',
+      purpose: 'Consultation',
+    },
   ],
   Declined: [
-    // Add declined appointments here
+    {
+      day: 'Sunday',
+      date: '30 Oct',
+      time: '4:00 pm - 5:00 pm',
+      name: 'Linda Johnson',
+      purpose: 'Checkup',
+    },
+    {
+      day: 'Monday',
+      date: '31 Oct',
+      time: '5:00 pm - 6:00 pm',
+      name: 'James Wilson',
+      purpose: 'Routine Checkup',
+    },
   ],
   Completed: [
-    // Add completed appointments here
+    {
+      day: 'Tuesday',
+      date: '01 Nov',
+      time: '10:00 am - 11:00 am',
+      name: 'Sophia Martinez',
+      purpose: 'Consultation',
+    },
+    {
+      day: 'Wednesday',
+      date: '02 Nov',
+      time: '11:00 am - 12:00 pm',
+      name: 'Daniel Garcia',
+      purpose: 'Follow-up',
+    },
   ],
 };
 
