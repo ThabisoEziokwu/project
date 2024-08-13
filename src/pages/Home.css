@@ -1,0 +1,328 @@
+/* Home.css */
+
+.home {
+    background-color: #F6F6F6;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.link, .link:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.huge{
+    font-weight: 700;
+    font-size: 30px;
+}
+.appointments-info {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #6D6D6D;
+}
+
+.appointments-info a {
+    color: #00B4D8;
+    text-decoration: none;
+}
+
+.appointments-info a:hover {
+    text-decoration: underline;
+}
+
+.subheading {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #CECECE;
+    margin: 20px 0;
+}
+
+.appointments-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.appointment-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    min-width: 250px; /* Ensure boxes don't get too small */
+}
+
+.appointment-column {
+    flex: 1;
+}
+
+.divider-vertical {
+    width: 1px;
+    background-color: #CECECE;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+.appointment-date {
+    font-size: 12px;
+}
+
+.day, .date, .time {
+    display: block;
+}
+
+.appointment-info {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.recent-appointments {
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.requests {
+    color: #6D6D6D;
+    cursor: pointer; /* Add cursor pointer to indicate clickable */
+}
+
+.view-all {
+    font-size: 12px;
+    color: #00B4D8;
+    text-decoration: none;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+.divider-dark {
+    border: none;
+    border-top: 1px solid #CECECE;
+    margin: 10px 0;
+}
+
+.appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px; /* Default font size */
+}
+
+.appointments-table th,
+.appointments-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #CECECE;
+}
+
+.appointments-table th {
+    background-color: #F6F6F6;
+}
+
+/* Badge Styles */
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px; /* Default font size */
+    text-align: center;
+}
+
+.badge-approved {
+    color: #00CB51 !important;
+    border: 1px solid #00CB51 !important;
+    background-color: rgba(0, 203, 81, 0.1) !important;
+}
+
+.badge-declined {
+    color: red !important;
+    border: 1px solid red !important;
+    background-color: rgba(219, 92, 92, 0.2) !important;
+}
+
+/* Responsive Badge Styles */
+@media (max-width: 768px) {
+    .recent-ann{
+        font-size: 14px;
+    }
+    .requests{
+        font-size: 12px;
+    }
+    .badge {
+        font-size: 12px; /* Smaller font size for mobile */
+        padding: 4px 8px; /* Reduced padding for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .badge {
+        font-size: 10px; /* Further reduce font size for very small screens */
+        padding: 3px 6px; /* Further reduce padding for very small screens */
+    }
+}
+
+/* Request Boxes */
+.requests-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.request-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Ensure the columns are spaced out */
+    flex-basis: calc(50% - 10px); /* Two columns */
+    max-width: calc(50% - 10px);
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Divider Between Columns */
+.divider-vertical-2 {
+    width: 1px;
+    background-color: #CECECE;
+    height: 80%;
+    margin: 0 15px; /* Space between the columns */
+}
+
+.action-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.btn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Ensure buttons take full width */
+}
+
+.accept {
+    background-color: #00CB51;
+    color: white;
+}
+
+.reject {
+    background-color: #EA2525;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .request-list {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .request-box {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center; /* Center text in mobile view */
+        padding: 10px;
+    }
+    .divider-vertical {
+        display: none; /* Hide vertical divider on mobile */
+    }
+
+    .divider-vertical-2 {
+        display: none; /* Hide vertical divider on mobile */
+    }
+
+    .action-column {
+        flex-direction: column;
+        align-items: center; /* Center buttons horizontally */
+        gap: 10px;
+    }
+
+    .btn {
+        width: auto; /* Allow buttons to shrink on mobile */
+        flex: 1; /* Allow buttons to share available space equally */
+    }
+
+    .appointments-table-container {
+        overflow-x: auto; /* Allow horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+
+    .appointments-table {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .appointments-table th,
+    .appointments-table td {
+        padding: 8px; /* Reduce padding for mobile */
+    }
+
+    .view-all {
+        font-size: 10px;
+    }
+
+    .requests-list {
+        flex-direction: column; /* Stack request boxes vertically on mobile */
+    }
+
+    .request-box {
+        max-width: 100%; /* Ensure request boxes take full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .recent-ann{
+        font-size: 14px;
+    }
+    .action-column {
+        flex-direction: column;
+        width: 100%; /* Buttons take full width on very small screens */
+    }
+    .requests{
+        font-size: 12px;
+    }
+    .appointments-table {
+        font-size: 12px; /* Ensure table font size is still readable */
+    }
+
+    .appointments-table th,
+    .appointments-table td {
+        padding: 6px; /* Further reduce padding for very small screens */
+    }
+}

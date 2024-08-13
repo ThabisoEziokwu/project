@@ -1,0 +1,19 @@
+.app {
+    display: flex;
+    height: 100vh;
+    background-color: #B1B1B1;
+  }
+  
+  .main-content {
+    display: flex;
+    width: 100%;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #B1B1B1;
+    color: #333;
+  }
+  

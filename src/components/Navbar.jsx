@@ -1,16 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { FaSearch, FaBell, FaUser } from 'react-icons/fa';
+import './Navbar.css';
 
-const Navbar = () => {
-  return (
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/appointments">Appointments</Link></li>
-        <li><Link to="/history">History</Link></li>
-      </ul>
-    </nav>
-  );
-};
+const Navbar = ({ toggleSidebar }) => (
+  <div className="navbar">
+    <button className="navbar-toggle" onClick={toggleSidebar}>
+      ☰
+    </button>
+    <div className="logo">Logo</div>
+    <div className="icons-container">
+      <FaSearch className="navbar-icon" />
+      <FaBell className="navbar-icon" />
+      <FaUser className="navbar-icon" />
+      <span className="user-name">Dr. John Doe</span>
+    </div>
+  </div>
+);
 
 export default Navbar;
