@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
-const doctorName = 'Dr. Smith'; // Replace with actual doctor's name
+const doctorName = 'Dr. Nwafor'; // Replace with actual doctor's name
 
 const appointments = [
   {

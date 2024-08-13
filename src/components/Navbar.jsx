@@ -13,7 +13,7 @@ const Navbar = ({ toggleSidebar }) => (
       <FaSearch className="navbar-icon" />
       <FaBell className="navbar-icon" />
       <FaUser className="navbar-icon" />
-      <span className="user-name">Dr. John Doe</span>
+      <span className="user-name">Dr. Nwafor</span>
     </div>
   </div>
 );
